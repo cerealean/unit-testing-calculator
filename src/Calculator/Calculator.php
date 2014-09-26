@@ -13,7 +13,7 @@ class Calculator {
      * @throws InvalidParameterException
      * @return int
      */
-    public function add (...$integers) {
+    public function add(...$integers) {
         $total = 0;
 
         foreach ($integers as $integer_to_add) {
@@ -31,7 +31,7 @@ class Calculator {
      * @return int
      * @throws InvalidParameterException
      */
-    public function subtract (...$integers) {
+    public function subtract(...$integers) {
         $total = 0;
 
         foreach ($integers as $integer_to_subtract) {
