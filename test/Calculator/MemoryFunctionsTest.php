@@ -38,7 +38,7 @@ class MemoryFunctionsTest extends \PHPUnit_Framework_TestCase {
 
         $this->memory_functions->retrieveLatestMemoryEntry($calculator_id);
 
-        Phake::verify($this->memory_dao)
+        Phake::verify($this->memory_dao, Phake::times(1))
              ->retrieveLatestMemoryEntry($calculator_id);
     }
 
